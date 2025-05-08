@@ -38,7 +38,7 @@ export default function header() {
         <div className="container mx-auto px-8 py-2 flex justify-between items-center">          
           <HamburgerButton />          
           <div className="cursor-pointer" onClick={handleHomePage}>
-            <img src="/assets/images/mendexLogo.jpg" alt="Mendex logo" width="45" height="45" />
+            <img src="/assets/images/mendexLogo.jpg" alt="Test logo" width="45" height="45" />
           </div>
           <div>
             {name == "" ? (
