@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Blurred Side Menu Popup</title>
+  <style>
+    body{
+      background-color: navy;
+      filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%;
+    }
+    /* CSS for the side menu popup */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Off-screen by default */
+  width: 80%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  filter: blur(20px); /* Adjust the blur amount as needed */
+  transition: left 0.3s ease;
+}
+
+/* CSS to show the side menu on button click */
+.show-menu {
+  left: 0;
+}
+
+  </style>
+</head>
+<body>
+  <button onclick="toggleMenu()" style="position: absolute; top:0; right:0;">Open Menu</button>
+  <div class="side-menu">
+    <!-- Your menu content goes here -->
+    <p>This is the side menu content.</p>
+  </div>
+  <div style="display: flex;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.side-menu').classList.toggle('show-menu');
+    }
+  </script>
+</body>
+</html>

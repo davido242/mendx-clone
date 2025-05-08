@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blurred Background Example</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .blurred-background {
+      /* background-color: navy; */
+      background-color: rgba(255, 255, 255, 0.9);
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; /* Place the content above the blurred background */
+    }
+
+    .content {
+      /* Add styles for the content that should not be blurred */
+      padding: 20px;
+      background-color: orange;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blurred-background">
+    <div style="display: flex;">
+      <div style="border: 2px solid red;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      <div style="border: 2px solid blue;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+    </div>
+    <div style="display: flex;">
+      <div style="border: 2px solid red; padding: 10px; background-color: navy;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+      
+      <div style="border: 2px solid blue;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+    </div>
+    <div style="display: flex;">
+      <div style="border: 2px solid red; padding: 10px; background-color: navy;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+      
+      <div style="border: 2px solid blue;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+    </div>
+    <div style="display: flex;">
+      <div style="border: 2px solid red; padding: 10px; background-color: navy;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+      
+      <div style="border: 2px solid blue;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta_CWuX4ND_mjb4gTFaC9GVIaEX8_QeGbVA&usqp=CAU" alt="placeholder" />
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="content">
+      <!-- Your non-blurred content goes here -->
+      <h1>Hello, this is not blurred</h1>
+      <p>This content is not affected by the background blur.</p>
+    </div>
+  </div>
+
+</body>
+</html>

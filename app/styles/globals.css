@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.megaMenu .topLink {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s ease-out;
+}
+.megaMenu .topLink:hover {
+  border-color: black;
+}
+
+.hiddenDropdown {
+  @apply top-[2.7rem] pt-12 left-0 absolute text-gray-800 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 invisible group-hover:visible;
+}
+
+.bg-brown-bg {
+ @apply bg-[#e1e1e1];
+}
+
+.sales-title {
+  @apply w-full text-center py-10;
+}
+
+.form-input {
+  @apply px-4 py-2 outline-none text-[#675d5dbd] rounded;
+}
+
+.cart-btn {
+  @apply cursor-pointer hover:bg-[#e17800] bg-[#e16800] p-2 rounded mt-3;
+}
+
+.megaMenu li {
+  @apply cursor-pointer font-light;
+}
+
+.footerHeader > p:nth-child(1) {
+  @apply font-bold uppercase py-4 text-sm;
+}
+
+.footerHeader a {
+  @apply block text-sm;
+}
+
+.footerIcons {
+  @apply p-4 w-2 h-2 border flex justify-center items-center hover:bg-slate-500 cursor-pointer;
+}
+.footerIconVisa {
+  @apply px-2 py-1 text-xs border flex justify-center items-center hover:bg-slate-500 bg-blue-500 cursor-pointer rounded;
+}
