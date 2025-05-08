@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProductList from "./components/ProductList";
 
 export const metadata: Metadata = {
-  title: "Mendex Looks",
+  title: "Test Looks",
   description: "Developed by OnlineMD",
 };
 
@@ -20,13 +20,13 @@ export default function Home() {
           </div>
           <ProductList />
         </div>
-        <div className="relative w-full bg-[url('/assets/images/MOB-KIDS.webp')] md:bg-[url('/assets/images/WEB-KIDS.webp')] min-h-[35rem] bg-cover bg-center">
+        {/* <div className="relative w-full bg-[url('/assets/images/MOB-KIDS.webp')] md:bg-[url('/assets/images/WEB-KIDS.webp')] min-h-[35rem] bg-cover bg-center">
           <div className="absolute bottom-12 flex w-full gap-8 justify-center">
             <button className="rounded-full px-12 py-4 uppercase text-[12px] font-medium bg-white cursor-pointer hover:bg-slate-300">
               Shop now
             </button>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
