@@ -26,7 +26,7 @@ export default function Product() {
                       New
                     </div>
                     <div>
-                      <Image src="/assets/images/love.svg" alt="fav icon" width={20} height={25} className="" />
+                      <img src="/assets/images/love.svg" alt="fav icon" width={20} height={25} className="" />
                     </div>
                   </div>
                   <Image
