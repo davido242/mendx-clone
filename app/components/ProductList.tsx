@@ -33,11 +33,15 @@ export default function Product() {
                       src={product.image.back}
                       alt={product.name}
                       className="rounded-2xl h-auto opacity-100 transition-opacity duration-300 delay-200  group-hover:opacity-0 group-hover:delay-75 group-hover:invisible visible "
+                      width={200}
+                      height={200}
                     />
                     <Image
                       src={product.image.front}
                       alt={product.name}
                       className="rounded-2xl h-auto invisible group-hover:visible absolute inset-0 z-0"
+                      width={200}
+                      height={200}
                     />
                   <div className="hidden absolute group-hover:block duration-300 bottom-2 left-0 p-2 w-full rounded-lg">
                     <Link href="#" className="bg-white text-center w-full inline-block py-4 rounded-full">
