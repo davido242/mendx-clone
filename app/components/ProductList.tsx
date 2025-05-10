@@ -29,7 +29,7 @@ export default function Product() {
                       <img src="/assets/images/love.svg" alt="fav icon" width={20} height={25} className="" />
                     </div>
                   </div>
-                  <Image
+                  <img
                       src={product.image.back}
                       alt={product.name}
                       className="rounded-2xl h-auto opacity-100 transition-opacity duration-300 delay-200  group-hover:opacity-0 group-hover:delay-75 group-hover:invisible visible "
